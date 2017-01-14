@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+	background: #393838;
+}
+
+.active-players {
+	height: 35px;
+	line-height: 35px;
+	padding: 5px;
+	background-color: black;
+	color: white;
+
+	margin-bottom: 5px;
+}
+
+.pause-overlay{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: red;
+	display: none;
+}
+
+.help {
+	float: left;
+	border: solid 1px white;
+	border-radius: 4px;
+	width: 25px;
+	text-align: center;
+}
+
+.pre-text{
+	float: left;
+	margin-left: 5px;
+
+}
+.amount {
+	float: left;
+	margin-left: 0.5rem;
+}
+
+.admin-controls {
+	display: none;
+	float: right;
+	margin-right: 10px;
+	
+}
+
+#player-name {
+	border: none;
+	border-bottom: solid black 1px;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+button {
+	border: solid black 1px;
+	background-color: #94f3ee;
+	padding: 8px;
+	border-radius: 10px;
+	outline: 0;
+}
+button:active {
+	background-color: #80e2dd;
+}
+
+
+.player-board {
+}
+
+.player {
+	width: 10rem;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 1rem;
+	border: solid black 1px;
+	text-align: center;
+	float: left;
+	background-color: white;
+}
+
+.name {
+	font-size: 1.2rem;
+}
+
+.timer {
+
+}
+
+.last-round {
+
+}

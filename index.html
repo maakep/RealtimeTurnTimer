@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+		<script src="clientside.js"></script>
+		<link rel="stylesheet" type="text/css" href="style">
+	</head>
+	<body>
+		<div class="active-players">
+			<a class="help" title="Spacebar: next turn. Escape: Pause/resume">?
+			</a>
+			<div class="pause-overlay">
+				GAME PAUSED
+			</div>
+			<div class="pre-text">
+				Participants online: 
+			</div>
+			<div class="amount">
+				
+			</div>
+
+			<div class="admin-controls">
+				<input type="text" id="player-name">
+				<button id="add-player">
+					Add player
+				</button>
+				<button id="start-game">
+					Start game
+				</button>
+			</div>
+		</div>
+
+		<div class="player-board">
+
+		</div>
+	</body>
+</html>
