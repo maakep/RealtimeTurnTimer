@@ -46,6 +46,12 @@ socket.on('update state', function(state){
 	}
 
 	$('.amount').text(state.spectators);
+
+	var date = new Date(null);
+	date.setSeconds(state.totalTime);
+	var totalTimestamp = date.toISOString().substr(11, 8);
+
+	$('.total-game-time').text(totalTimestamp);
 	$('.player-board').html(html);
 	
 });
