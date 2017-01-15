@@ -42,6 +42,7 @@ io.on('connection', function(socket){
 	socket.on('pause game', function(){
 		if (admin === socket.id){
 			togglePauseGame();
+			io.emit('pause game');
 		}
 	});
 });
@@ -122,7 +123,6 @@ function setAdmin(socket) {
 	if(admin == "null") {
 		admin = socket.id;
 		socket.emit('admin');
-		console.log("New admin");
 	}
 }
 

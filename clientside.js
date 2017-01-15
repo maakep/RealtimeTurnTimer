@@ -7,7 +7,6 @@ $(document).ready(function(){
 			socket.emit("next turn");
 	    } else if (e.keyCode === 27) {	    	
 	    	socket.emit("pause game");
-	    	$('.pause-overlay').toggle();
 	    }
 	});
 
@@ -57,4 +56,9 @@ socket.on('update timer', function(player){
 
 socket.on('admin', function(){
 	$('.admin-controls').toggle();
+});
+
+
+socket.on('pause game', function(){
+	$('.pause-overlay').toggle();
 });
