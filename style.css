@@ -24,9 +24,11 @@ body {
 .help {
 	float: left;
 	border: solid 1px white;
-	border-radius: 4px;
 	width: 25px;
 	text-align: center;
+}
+.help:hover {
+	cursor: help;
 }
 
 .pre-text{
@@ -51,37 +53,41 @@ body {
 	border-bottom: solid black 1px;
 	outline: none;
 	padding: 5px;
-	border-radius: 5px;
 }
 
 button {
-	border: solid black 1px;
-	background-color: #94f3ee;
+	background-color: #ffe7d2;
 	padding: 8px;
-	border-radius: 10px;
 	outline: 0;
+}
+button:hover {
+	cursor: pointer;
 }
 button:active {
 	background-color: #80e2dd;
 }
 
 
-.player-board {
+.my-turn {
+	background-color: #9df99f!important;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)!important;
 }
 
 .player {
 	width: 10rem;
+	min-height: 89px;
 	padding: 1rem;
 	margin: 1rem;
-	border-radius: 1rem;
-	border: solid black 1px;
 	text-align: center;
 	float: left;
 	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .name {
 	font-size: 1.2rem;
+	margin-bottom: 15px;
 }
 
 .timer {
